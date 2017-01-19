@@ -31,10 +31,10 @@ If you need another version you can compile it yourself and submit a PR to get i
 ### Compiling a new version
 To compile a new version you will first need a openshift application.
 ```BASH
-rhc create-app nginx http://cartreflect-claytondev.rhcloud.com/github/boekkooi/openshift-cartridge-nginx
+rhc create-app nginx http://cartreflect-claytondev.rhcloud.com/github/Potala2007/nginx-default
 ```
 
-Now clone the repository and create a `nginx` folder. Now copy the `usr/compile` directory from [this](https://github.com/boekkooi/openshift-cartridge-nginx) repository.
+Now clone the repository and create a `nginx` folder. Now copy the `usr/compile` directory from [this](https://github.com/Potala2007/nginx-default) repository.
 Now set the versions you need to compile in the `nginx/compile/versions` file. Commit and push the application repository.
 
 SSH into you app and go to the compile folder (`cd ${OPENSHIFT_REPO_DIR}/nginx/compile`) and start compiling by running the following command:
@@ -46,7 +46,7 @@ Place the archive into the `openshift-cartridge-nginx/usr` folder.
 Last but not least edit the `openshift-cartridge-nginx/manifest.yml` and add the versions.
 
 (Make sure you have [Git LFS](https://git-lfs.github.com/) installed.)
-Now commit and push to your `openshift-cartridge-nginx` repo and create a [PR](https://github.com/boekkooi/openshift-cartridge-nginx/pulls).
+Now commit and push to your `openshift-cartridge-nginx` repo and create a [PR](https://github.com/Potala2007/nginx-default/pulls).
 
 To use your own fork make sure you change `LFS_ENDPOINT` in `openshift-cartridge-php/bin/setup` and use:
 ```BASH
