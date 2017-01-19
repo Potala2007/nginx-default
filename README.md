@@ -1,4 +1,4 @@
-# Openshift Nginx Cartridge
+# Openshift Nginx Default
 Welcome to a life where [nginx](http://nginx.org/) is possible on [openshift](https://www.openshift.com/).
 
 This cartridge allow you to create a scalable nginx application, defaulting to using nginx version 1.9.12.
@@ -6,13 +6,13 @@ Combine this with the [boekkooi PHP cartridge](https://github.com/boekkooi/opens
 
 Just create your app using:
 ```BASH
-rhc create-app myapp http://cartreflect-claytondev.rhcloud.com/github/boekkooi/openshift-cartridge-nginx
+rhc create-app myapp http://cartreflect-claytondev.rhcloud.com/github/Potala2007/nginx-default
 ```
 
 If you want to install a specific nginx version you can add `--env OPENSHIFT_NGINX_VERSION=<version>` to the command.
 For example to install nginx 1.8.0 you can use:
 ```BASH
-rhc create-app myapp --env OPENSHIFT_NGINX_VERSION=1.8.0 http://cartreflect-claytondev.rhcloud.com/github/boekkooi/openshift-cartridge-nginx
+rhc create-app myapp --env OPENSHIFT_NGINX_VERSION=1.8.0 http://cartreflect-claytondev.rhcloud.com/github/Potala2007/nginx-default
 ```
 
 ## Versions
@@ -50,5 +50,5 @@ Now commit and push to your `openshift-cartridge-nginx` repo and create a [PR](h
 
 To use your own fork make sure you change `LFS_ENDPOINT` in `openshift-cartridge-php/bin/setup` and use:
 ```BASH
-rhc cartridge add -a myapp http://cartreflect-claytondev.rhcloud.com/github/<user>/openshift-cartridge-nginx
+rhc cartridge add -a myapp http://cartreflect-claytondev.rhcloud.com/github/Potala2007/nginx-default
 ```
